@@ -1,4 +1,16 @@
-    # Installing Yiimp
+output() {
+    printf "\E[0;33;40m"
+    echo $1
+    printf "\E[0m"
+}
+
+displayErr() {
+    echo
+    echo $1;
+    echo
+    exit 1;
+}
+# Installing Yiimp
     output " "
     output " Installing Yiimp"
     output " "
@@ -12,6 +24,7 @@
     
     # Compile Blocknotify
     cd ~
+    rm -r yiimp
     git clone https://github.com/tpruvot/yiimp.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
