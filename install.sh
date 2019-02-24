@@ -278,18 +278,18 @@ default         0;
     # Generating Random Password for stratum
     blckntifypass=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
     
-    # Compil Blocknotify
+    # Compile Blocknotify
     cd ~
     git clone https://github.com/tpruvot/yiimp.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
     
-    # Compil iniparser
+    # Compile iniparser
     cd $HOME/yiimp/stratum/iniparser
     sudo make
     
-    # Compil Stratum
+    # Compile Stratum
     cd $HOME/yiimp/stratum
     if [[ ("$BTC" == "y" || "$BTC" == "Y") ]]; then
     sudo sed -i 's/CFLAGS += -DNO_EXCHANGE/#CFLAGS += -DNO_EXCHANGE/' $HOME/yiimp/stratum/Makefile
