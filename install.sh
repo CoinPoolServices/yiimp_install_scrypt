@@ -892,7 +892,7 @@ define('"'"'YAAMP_DBNAME'"'"', '"'"'yiimpfrontend'"'"');
 define('"'"'YAAMP_DBUSER'"'"', '"'"'panel'"'"');
 define('"'"'YAAMP_DBPASSWORD'"'"', '"'"''"${password}"''"'"');
 define('"'"'YAAMP_PRODUCTION'"'"', true);
-define('"'"'YAAMP_RENTAL'"'"', false);
+define('"'"'YAAMP_RENTAL'"'"', true);
 define('"'"'YAAMP_LIMIT_ESTIMATE'"'"', false);
 define('"'"'YAAMP_FEES_MINING'"'"', 0.5);
 define('"'"'YAAMP_FEES_EXCHANGE'"'"', 2);
@@ -903,7 +903,7 @@ define('"'"'YAAMP_PAYMENTS_MINI'"'"', 0.001);
 define('"'"'YAAMP_ALLOW_EXCHANGE'"'"', false);
 define('"'"'YIIMP_PUBLIC_EXPLORER'"'"', true);
 define('"'"'YIIMP_PUBLIC_BENCHMARK'"'"', true);
-define('"'"'YIIMP_FIAT_ALTERNATIVE'"'"', '"'"'USD'"'"'); // USD is main
+define('"'"'YIIMP_FIAT_ALTERNATIVE'"'"', '"'"'EUR'"'"'); // USD is main
 define('"'"'YAAMP_USE_NICEHASH_API'"'"', false);
 define('"'"'YAAMP_BTCADDRESS'"'"', '"'"'1C1hnjk3WhuAvUN6Ny6LTxPD3rwSZwapW7'"'"');
 define('"'"'YAAMP_SITE_URL'"'"', '"'"''"${server_name}"''"'"');
@@ -920,7 +920,6 @@ define('"'"'EXCH_CRYPTOPIA_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_POLONIEX_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_BITTREX_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_BLEUTRADE_KEY'"'"', '"'"''"'"');
-define('"'"'EXCH_BTER_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_YOBIT_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_CCEX_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_COINMARKETS_USER'"'"', '"'"''"'"');
