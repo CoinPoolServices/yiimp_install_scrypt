@@ -11,8 +11,6 @@ displayErr() {
     exit 1;
 }
     read -e -p "Set Pool to AutoExchange? i.e. mine any coin with BTC address? [y/N] : " BTC
-    read -e -p "Please enter a new location for /site/adminRights this is to customize the Admin Panel entrance url (e.g. myAdminpanel) : " admin_panel
-    read -e -p "Enter the Public IP of the system you will use to access the admin panel (http://www.whatsmyip.org/) : " Public
 # Installing Yiimp
     output " "
     output " Installing Yiimp"
@@ -47,7 +45,6 @@ displayErr() {
     
     # Remove old files and copy Files (Blocknotify,iniparser,Stratum)
     cd $HOME/yiimp
-    sudo sed -i 's/AdminRights/'$admin_panel'/' $HOME/yiimp/web/yaamp/modules/site/SiteController.php
     yes | sudo cp -r $HOME/yiimp/web /var/
     cd $HOME/yiimp/stratum
     yes | sudo cp -a config.sample/. /var/stratum/config
