@@ -113,6 +113,7 @@ displayErr() {
     sudo rm -r /var/framework
     sudo rm -r /var/images
     sudo rm -r /var/yaamp
+    sudo rm -r /var/stratum
     cd $HOME/yiimp
     sudo sed -i 's/AdminRights/'$admin_panel'/' $HOME/yiimp/web/yaamp/modules/site/SiteController.php
     yes | sudo cp -r $HOME/yiimp/web /var/
