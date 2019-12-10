@@ -280,7 +280,7 @@ default         0;
     
     # Compile Blocknotify
     cd ~
-    git clone https://github.com/tpruvot/yiimp.git
+    git clone https://github.com/CoinPoolServices/yiimp.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
