@@ -2,7 +2,7 @@
 ################################################################################
 # Original Author:   crombiecrunch
 # Fork Author: manfromafar
-# Current Author: Xavatar (https://github.com/xavatar/yiimp_install_scrypt)
+# Current Author: RealAwesomeness (https://github.com/RealAwesomeness/yiimp-install-script)
 # Web:     
 #
 # Program:
@@ -278,18 +278,18 @@ default         0;
     # Generating Random Password for stratum
     blckntifypass=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
     
-    # Compil Blocknotify
+    # Compile Blocknotify
     cd ~
     git clone https://github.com/tpruvot/yiimp.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
     
-    # Compil iniparser
+    # Compile iniparser
     cd $HOME/yiimp/stratum/iniparser
     sudo make
     
-    # Compil Stratum
+    # Compile Stratum
     cd $HOME/yiimp/stratum
     if [[ ("$BTC" == "y" || "$BTC" == "Y") ]]; then
     sudo sed -i 's/CFLAGS += -DNO_EXCHANGE/#CFLAGS += -DNO_EXCHANGE/' $HOME/yiimp/stratum/Makefile
@@ -892,7 +892,7 @@ define('"'"'YAAMP_DBNAME'"'"', '"'"'yiimpfrontend'"'"');
 define('"'"'YAAMP_DBUSER'"'"', '"'"'panel'"'"');
 define('"'"'YAAMP_DBPASSWORD'"'"', '"'"''"${password}"''"'"');
 define('"'"'YAAMP_PRODUCTION'"'"', true);
-define('"'"'YAAMP_RENTAL'"'"', false);
+define('"'"'YAAMP_RENTAL'"'"', true);
 define('"'"'YAAMP_LIMIT_ESTIMATE'"'"', false);
 define('"'"'YAAMP_FEES_MINING'"'"', 0.5);
 define('"'"'YAAMP_FEES_EXCHANGE'"'"', 2);
@@ -903,7 +903,7 @@ define('"'"'YAAMP_PAYMENTS_MINI'"'"', 0.001);
 define('"'"'YAAMP_ALLOW_EXCHANGE'"'"', false);
 define('"'"'YIIMP_PUBLIC_EXPLORER'"'"', true);
 define('"'"'YIIMP_PUBLIC_BENCHMARK'"'"', true);
-define('"'"'YIIMP_FIAT_ALTERNATIVE'"'"', '"'"'USD'"'"'); // USD is main
+define('"'"'YIIMP_FIAT_ALTERNATIVE'"'"', '"'"'EUR'"'"'); // USD is main
 define('"'"'YAAMP_USE_NICEHASH_API'"'"', false);
 define('"'"'YAAMP_BTCADDRESS'"'"', '"'"'1C1hnjk3WhuAvUN6Ny6LTxPD3rwSZwapW7'"'"');
 define('"'"'YAAMP_SITE_URL'"'"', '"'"''"${server_name}"''"'"');
@@ -920,7 +920,6 @@ define('"'"'EXCH_CRYPTOPIA_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_POLONIEX_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_BITTREX_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_BLEUTRADE_KEY'"'"', '"'"''"'"');
-define('"'"'EXCH_BTER_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_YOBIT_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_CCEX_KEY'"'"', '"'"''"'"');
 define('"'"'EXCH_COINMARKETS_USER'"'"', '"'"''"'"');
