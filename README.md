@@ -1,21 +1,3 @@
-# Yiimp_install_scrypt (update October, 2018)
-
-
-Discord : https://discord.gg/zcCXjkQ
-
-TUTO Youtube (16.04 - Without SSL) : https://www.youtube.com/watch?v=vdBCw6_cyig
-
-TUTO Youtube (16.04 - With SSL) : https://www.youtube.com/watch?v=fWwGow_i-Vw
-
-Official Yiimp (used in this script for Yiimp Installation): https://github.com/tpruvot/yiimp
-
-Install script for yiimp on Ubuntu 17.10 : https://github.com/xavatar/yiimp_install_scrypt_ubuntu17.10
-
-Install script for yiimp on Ubuntu 18.04 : https://github.com/xavatar/yiimp_install_scrypt_ubuntu18.04
-
-
-***********************************
-
 ## Install script for yiimp on Ubuntu Server 16.04
 
 USE THIS SCRIPT ON FRESH INSTALL UBUNTU Server 16.04 !
@@ -25,7 +7,7 @@ Connect on your VPS =>
 - adduser pool sudo
 - su - pool
 - sudo apt-get -y install git
-- git clone https://github.com/xavatar/yiimp_install_scrypt.git
+- git clone https://github.com/CoinPoolServices/yiimp_install_scrypt.git
 - cd yiimp_install_scrypt/
 - sudo bash install.sh (Do not run the script as root)
 - sudo bash screen-scrypt.sh (in tuto youtube, i launch the scrypt with root... it does not matter)
@@ -70,8 +52,3 @@ While I did add some server security to the script, it is every server owners re
 There will be several wallets already in yiimp. These have nothing to do with the installation script and are from the database import from the yiimp github. 
 
 If you need further assistance we have a small but growing discord channel at https://discord.gg/zcCXjkQ
-
-If this helped you or you feel giving please donate : 
-- BTC Donation : 1C1hnjk3WhuAvUN6Ny6LTxPD3rwSZwapW7
-- BCH Donation : 1PqjApUdjwU9k4v1RDWf6XveARyEXaiGUz
-- ETH Donation : 0xc23E6902fF8Cd8878EDADE18Dc49B3505395F0a1
