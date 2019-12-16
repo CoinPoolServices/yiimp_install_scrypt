@@ -88,7 +88,8 @@ displayErr() {
     
     # Compile Blocknotify
     cd ~
-    sudo rm -r yiimp-install-only-do-not-run-commands-from-this-folder
+	sudo rm -rf yiimp
+    sudo rm -rf yiimp-install-only-do-not-run-commands-from-this-folder
     git clone https://github.com/CoinPoolServices/yiimp.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
