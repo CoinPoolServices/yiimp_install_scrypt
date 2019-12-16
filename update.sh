@@ -181,7 +181,6 @@ exec bash
     sudo chmod -R 664 /root/backup/
     sudo chmod -R 644 /var/log/debug.log
     sudo chmod -R 775 /var/web/serverconfig.php
-    sudo rm -r $HOME/yiimp/
     sudo rm -rf /var/log/nginx/*
     sudo systemctl reload php7.0-fpm.service
     sudo systemctl restart nginx.service
